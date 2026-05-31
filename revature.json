@@ -1,0 +1,45 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/HardcodedLoginTest.java",
+      "testCases": [
+        {
+          "methodName": "loginTest1",
+          "label": "Test successful login for admin user",
+          "description": "Verifies that the login function permits access when using the hardcoded credentials 'admin' and 'qwerty'."
+        },
+        {
+          "methodName": "loginTest2",
+          "label": "Test failed login for admin with incorrect password",
+          "description": "Verifies that the login function denies access when 'admin' uses an incorrect password, 'password'."
+        },
+        {
+          "methodName": "loginTest3",
+          "label": "Test failed login for admin with another incorrect password",
+          "description": "Verifies that the login function denies access when 'admin' uses another incorrect password, '123456'."
+        },
+        {
+          "methodName": "loginTest4",
+          "label": "Test successful login for standard user",
+          "description": "Verifies that the login function permits access when using the hardcoded credentials 'user' and 'password'."
+        },
+        {
+          "methodName": "loginTest5",
+          "label": "Test failed login for standard user with incorrect password",
+          "description": "Verifies that the login function denies access when 'user' uses an incorrect password, 'qwerty'."
+        },
+        {
+          "methodName": "loginTest6",
+          "label": "Test failed login for standard user with another incorrect password",
+          "description": "Verifies that the login function denies access when 'user' uses another incorrect password, '123456'."
+        },
+        {
+          "methodName": "loginTest7",
+          "label": "Test failed login for unknown user",
+          "description": "Verifies that the login function denies access for a user, 'guest', who does not match any hardcoded credentials."
+        }
+      ]
+    }
+  ]
+}
